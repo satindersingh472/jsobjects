@@ -23,7 +23,10 @@ let company = {
 };
 let list_manager = 0;
 while(list_manager < company[`managers`].length){
-    console.log(`${company[`managers`][list_manager][`name`]}`);
+    if(company[`managers`][list_manager][`is_senior`] === true){
+        console.log(`${company[`managers`][list_manager][`name`]}`);
+    }
+   
     list_manager++;
 }
 
